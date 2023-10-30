@@ -13,7 +13,7 @@ export const Contact = () => {
         }}
       >
         <Box>
-          <Typography variant="h1" object align="center">
+          <Typography variant="h1" align="center">
             Contact
           </Typography>
         </Box>
