@@ -1,10 +1,9 @@
-import React from "react";
 import { Container, Box, Typography } from "@mui/material";
-// import ModelViewer from "../components/ModelViewer";
+import { ModelViewer } from "../components/ModelViewer";
 
 export const Home = () => {
   return (
-    <Container sx={{ backgroundColor: "#caf0f8" }}>
+    <Container sx={{ backgroundColor: "#d4a373" }}>
       <Box
         sx={{
           width: "100%",
@@ -25,15 +24,12 @@ export const Home = () => {
             enjoy the rest of my website!
           </Typography>
         </Box>
-        <Box>
-          {/* <ModelViewer
-            src="/src/assets/uploads_files_4725876_Emoticon+40.glb"
-            alt="PFP"
-            // // style={{
-            // //   height: "50%",
-            // //   borderRadius: "50%",
-            // }}
-          /> */}
+        <Box
+          style={{
+            height: "500%",
+          }}
+        >
+          <ModelViewer src="/src/assets/eevee.glb" alt="Eevee 3D Model" />
         </Box>
       </Box>
     </Container>

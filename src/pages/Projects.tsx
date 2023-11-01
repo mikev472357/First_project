@@ -1,9 +1,8 @@
-import { Container, Box, Typography, Button } from "@mui/material";
-import React from "react";
+import { Container, Box, Typography, Button, Link } from "@mui/material";
 
 export const Projects = () => {
   return (
-    <Container sx={{ backgroundColor: "#98c1d9" }}>
+    <Container sx={{ backgroundColor: "#C9B003" }}>
       <Box
         sx={{
           width: "100%",
@@ -21,15 +20,15 @@ export const Projects = () => {
           </Typography>
         </Box>
         <Box style={{ textAlign: "left" }}>
-          <Button variant="contained">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/mikev472357?tab=repositories"
-            >
-              Repositories
-            </a>
-          </Button>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/mikev472357?tab=repositories"
+          >
+            <Button variant="contained">
+              <Typography sx={{ color: "#C9B003" }}>Repositories</Typography>
+            </Button>
+          </Link>
         </Box>
       </Box>
     </Container>

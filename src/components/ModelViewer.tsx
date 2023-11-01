@@ -1,20 +1,22 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import "@google/model-viewer";
 
-function ModelViewer(props) {
-  const modelRef = useRef(null);
-  useEffect(() => {
-    if (modelRef.current)
-      return (
-        <model-viewer
-          ref={modelRef}
-          src={props.src}
-          alt={props.alt}
-          auto-rotate
-          camera-controls
-          {...props}
-        ></model-viewer>
-      );
-  });
-}
-export default ModelViewer;
+export const ModelViewer = (props: { src: any; alt: string }) => {
+  const modelRef = React.useRef();
+
+  return (
+    // @ts-ignore
+    <model-viewer
+      ref={modelRef}
+      src={props.src}
+      alt={props.alt}
+      auto-rotate
+      camera-controls
+      // ref={(ref) => {
+      //   modelRef.current = ref;
+      // }}
+    >
+      {/* @ts-ignore */}
+    </model-viewer>
+  );
+};

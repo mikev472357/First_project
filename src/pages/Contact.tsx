@@ -1,9 +1,9 @@
-import { Container, Box, Typography, Button } from "@mui/material";
-import React from "react";
+import { Container, Box, Typography, Button, Link } from "@mui/material";
+import { ModelViewer } from "../components/ModelViewer";
 
 export const Contact = () => {
   return (
-    <Container sx={{ backgroundColor: "#ade8f4" }}>
+    <Container sx={{ backgroundColor: "#ffff3f" }}>
       <Box
         sx={{
           width: "100%",
@@ -24,28 +24,28 @@ export const Contact = () => {
           </Typography>
         </Box>
         <Box style={{ textAlign: "left" }}>
-          <Button variant="contained">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:michaelvalderrama2006@gmail.com"
-            >
-              Email
-            </a>
-          </Button>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:michaelvalderrama2006@gmail.com"
+          >
+            <Button variant="contained">
+              <Typography style={{ color: "yellow" }}>Email</Typography>
+            </Button>
+          </Link>
         </Box>
         <Box style={{ textAlign: "right" }}>
-          <Button variant="contained">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/mikev472357"
-            >
-              GitHub
-            </a>
-          </Button>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/mikev472357"
+          >
+            <Button variant="contained">
+              <Typography style={{ color: "yellow" }}>GitHub</Typography>
+            </Button>
+          </Link>
         </Box>
-        <Box>
+        {/* <Box>
           <img
             src="https://media.tenor.com/0WkmuOC_W00AAAAC/waving-pikachu.gif"
             alt="PFP"
@@ -53,6 +53,16 @@ export const Contact = () => {
               height: "50%",
               borderRadius: "50%",
             }}
+          />
+        </Box> */}
+        <Box>
+          <ModelViewer
+            src="/src/assets/jolteon.glb"
+            alt="Jolteon Pokemon"
+            // // style={{
+            // //   height: "50%",
+            // //   borderRadius: "50%",
+            // }}
           />
         </Box>
       </Box>

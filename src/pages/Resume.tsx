@@ -1,5 +1,5 @@
-import { Container, Grid } from "@mui/material";
-import React from "react";
+// import { Container, Grid } from "@mui/material";
+// import React from "react";
 
 // export const Resume = () => {
 //   return (
@@ -19,7 +19,7 @@ export const Resume = () => {
     "https://docs.google.com/document/d/17383l2ZkqVUe41odJKaJH4GZRSeFdU_XMZZD_KDY080/edit?usp=sharing";
   return (
     <div>
-      <iframe src={documentURL} width="500%" height="600% " />
+      <iframe src={documentURL} width="500%" height="1240px" />
     </div>
   );
 };
