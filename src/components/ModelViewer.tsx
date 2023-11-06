@@ -5,7 +5,6 @@ export const ModelViewer = (props: { src: any; alt: string }) => {
   const modelRef = React.useRef();
 
   return (
-    // @ts-ignore
     <model-viewer
       ref={modelRef}
       src={props.src}
@@ -15,8 +14,6 @@ export const ModelViewer = (props: { src: any; alt: string }) => {
       // ref={(ref) => {
       //   modelRef.current = ref;
       // }}
-    >
-      {/* @ts-ignore */}
-    </model-viewer>
+    ></model-viewer>
   );
 };
