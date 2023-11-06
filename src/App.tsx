@@ -25,7 +25,7 @@ function App() {
           textAlign: "center",
           border: "1px black solid",
           height: "10vh",
-          backgroundColor: "#d4a373",
+          backgroundColor: "white",
         }}
       >
         CopyRight @2023 | Michael Valderrama

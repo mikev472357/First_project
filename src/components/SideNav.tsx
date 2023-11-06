@@ -1,17 +1,9 @@
 import React from "react";
 import { Box, List, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 export const SideNav = () => {
-  // const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  // const handleDrawerToggle = () => {
-  //   setMobileOpen(!mobileOpen);
-  // };
-  // const navigate = useNavigate();
-  const location = useLocation();
-  const [sideNavColor, setSideNavColor] = React.useState("red");
+  const [sideNavColor, setSideNavColor] = React.useState("white");
 
   return (
     <div>
