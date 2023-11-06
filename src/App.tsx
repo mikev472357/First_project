@@ -9,7 +9,7 @@ import { SideNav } from "./components/SideNav";
 
 function App() {
   return (
-    <div>
+    <main>
       <div className="App">
         <SideNav />
         <Routes>
@@ -30,7 +30,7 @@ function App() {
       >
         CopyRight @2023 | Michael Valderrama
       </div>
-    </div>
+    </main>
   );
 }
 
