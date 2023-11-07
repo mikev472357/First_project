@@ -1,6 +1,6 @@
 {
   "name": "my_resume",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "http://mikev472357.github.io/resume",
