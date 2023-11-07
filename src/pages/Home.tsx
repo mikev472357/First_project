@@ -1,5 +1,5 @@
 import { Container, Box, Typography } from "@mui/material";
-import { ModelViewer } from "../components/ModelViewer";
+// import { ModelViewer } from "../components/ModelViewer";
 
 export const Home = () => {
   return (
@@ -29,7 +29,11 @@ export const Home = () => {
             height: "500%",
           }}
         >
-          <ModelViewer src="/src/assets/eevee.glb" alt="Eevee 3D Model" />
+          <model-viewer
+            src="/src/assets/eevee.glb"
+            alt="Eevee 3D Model"
+            camera-controls
+          ></model-viewer>
         </Box>
       </Box>
     </Container>
