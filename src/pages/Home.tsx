@@ -29,11 +29,11 @@ export const Home = () => {
             height: "500%",
           }}
         >
-          <model-viewer
+          {/* <ModelViewer
             src="/src/assets/eevee.glb"
             alt="Eevee 3D Model"
             camera-controls
-          ></model-viewer>
+          ></ModelViewer> */}
         </Box>
       </Box>
     </Container>

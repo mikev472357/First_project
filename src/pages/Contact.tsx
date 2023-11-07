@@ -1,5 +1,5 @@
 import { Container, Box, Typography, Button, Link } from "@mui/material";
-import { ModelViewer } from "../components/ModelViewer";
+// import { ModelViewer } from "../components/ModelViewer";
 
 export const Contact = () => {
   return (
@@ -56,14 +56,11 @@ export const Contact = () => {
           />
         </Box> */}
         <Box>
-          <ModelViewer
+          {/* <ModelViewer
             src="/src/assets/jolteon.glb"
             alt="Jolteon Pokemon"
-            // // style={{
-            // //   height: "50%",
-            // //   borderRadius: "50%",
-            // }}
-          />
+          
+          /> */}
         </Box>
       </Box>
     </Container>
