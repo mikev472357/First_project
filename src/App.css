@@ -1,12 +1,14 @@
 .App {
   text-align: center;
   display: flex;
+  width: 100%;
 }
 
+/* 
 model-viewer {
   width: 800px;
   height: 600px;
-}
+} */
 
 .App-logo {
   height: 40vmin;
